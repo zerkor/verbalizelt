@@ -1,6 +1,6 @@
 import type { Config } from "tailwindcss"
 
-const config = {
+const config: Config = {
   darkMode: ["class"],
   content: [
     './pages/**/*.{ts,tsx}',
@@ -19,38 +19,38 @@ const config = {
     },
     extend: {
       colors: {
-        border: "hsl(var(--border))",
-        input: "hsl(var(--input))",
-        ring: "hsl(var(--ring))",
-        background: "hsl(var(--background))",
-        foreground: "hsl(var(--foreground))",
+        border: "hsl(50 100% 80%)",             // Jaune plus foncé
+        input: "hsl(50 100% 80%)",              // Jaune plus foncé
+        ring: "hsl(50 100% 50%)",               // Jaune vif
+        background: "hsl(0 0% 100%)",           // Fond blanc
+        foreground: "hsl(222.2 84% 4.9%)",      // Texte noir
         primary: {
-          DEFAULT: "hsl(var(--primary))",
-          foreground: "hsl(var(--primary-foreground))",
+          DEFAULT: "hsl(50 100% 50%)",          // Jaune vif
+          foreground: "hsl(210 40% 98%)",       // Texte clair (blanc)
         },
         secondary: {
-          DEFAULT: "hsl(var(--secondary))",
-          foreground: "hsl(var(--secondary-foreground))",
+          DEFAULT: "hsl(50 100% 90%)",          // Jaune clair
+          foreground: "hsl(222.2 47.4% 11.2%)", // Texte foncé (presque noir)
         },
         destructive: {
-          DEFAULT: "hsl(var(--destructive))",
-          foreground: "hsl(var(--destructive-foreground))",
+          DEFAULT: "hsl(0 84.2% 60.2%)",        // Rouge vif
+          foreground: "hsl(210 40% 98%)",       // Texte clair (blanc)
         },
         muted: {
-          DEFAULT: "hsl(var(--muted))",
-          foreground: "hsl(var(--muted-foreground))",
+          DEFAULT: "hsl(50 100% 90%)",          // Jaune clair
+          foreground: "hsl(215.4 16.3% 46.9%)", // Texte gris foncé
         },
         accent: {
-          DEFAULT: "hsl(var(--accent))",
-          foreground: "hsl(var(--accent-foreground))",
+          DEFAULT: "hsl(50 100% 90%)",          // Jaune clair
+          foreground: "hsl(222.2 47.4% 11.2%)", // Texte foncé (presque noir)
         },
         popover: {
-          DEFAULT: "hsl(var(--popover))",
-          foreground: "hsl(var(--popover-foreground))",
+          DEFAULT: "hsl(0 0% 100%)",            // Fond blanc
+          foreground: "hsl(222.2 84% 4.9%)",    // Texte noir
         },
         card: {
-          DEFAULT: "hsl(var(--card))",
-          foreground: "hsl(var(--card-foreground))",
+          DEFAULT: "hsl(0 0% 100%)",            // Fond blanc
+          foreground: "hsl(222.2 84% 4.9%)",    // Texte noir
         },
       },
       borderRadius: {
@@ -75,6 +75,6 @@ const config = {
     },
   },
   plugins: [require("tailwindcss-animate")],
-} satisfies Config
+};
 
-export default config
+export default config;

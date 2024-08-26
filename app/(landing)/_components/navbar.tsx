@@ -37,7 +37,7 @@ export const Navbar = () => {
                     <NavigationMenuItem>
                         <Link href="/" className="flex items-center space-x-2">
                             <Logo />
-                            <h2 className="text-2xl font-bold">Mediacy</h2>
+                            <h2 className="text-2xl font-bold">VerbalizeIt</h2>
                         </Link>
                     </NavigationMenuItem>
                 </NavigationMenuList>

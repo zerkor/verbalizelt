@@ -27,7 +27,7 @@ const HeroInfo = () => {
     return (
         <div className="flex flex-col space-y-6 select-none">
             <h1 className="font-bold text-[65px] leading-[81px]">
-                Welcome to <br />Cryptocurrency <br /> <span className="text-[#6841DA]">Social Media</span>
+                Welcome to <br />Language <br /> <span className="text-[#6841DA]">Social Media</span>
             </h1>
             <p className="font-light text-xs">
                 Measure social media performance, create great reports, and get and <br /> recommend recommendations to increase reach, engagement and sales.
@@ -55,26 +55,8 @@ const HeroDL = () => {
                     height={20}
                 />
                 <p className="text-xs text-[#979797] font-bold">
-                    PAY ONE-TIME SMALL FEE, USE LIFETIME
+                    PAY ONE-TIME , USE LIFETIME
                 </p>
-            </div>
-            <div className="flex gap-6">
-                <Link href="/" className="cursor-pointer">
-                    <Image
-                        src={"/appstore-badge.svg"}
-                        alt="AppStore Bage"
-                        width={120}
-                        height={50}
-                    />
-                </Link>
-                <Link href="/" className="cursor-pointer">
-                    <Image
-                        src={"/googleplay-badge.svg"}
-                        alt="AppStore Bage"
-                        width={120}
-                        height={50}
-                    />
-                </Link>
             </div>
         </div>
     )
@@ -91,7 +73,5 @@ const HeroRight = () => {
         />
     )
 }
-
-
 
 export default Hero;

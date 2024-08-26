@@ -9,7 +9,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Mediacy",
+  title: "VerbalizeIt",
 };
 
 export default function RootLayout({
